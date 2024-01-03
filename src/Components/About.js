@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -6,7 +7,7 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   <div className="bg-blue-400 px-8 py-10 rounded-md transition duration-300 ease-in-out hover:bg-blue-500">
     <div className="w-20 py-3 flex justify-center bg-gray-100 rounded-md mb-4">
-    <i class="ri-bar-chart-box-fill text-3xl"></i>
+    <i className="ri-bar-chart-box-fill text-3xl"></i>
     </div>
     <h4 className="font-medium text-gray-700 text-lg mb-4">
       My Experience
@@ -18,7 +19,7 @@ export default function About() {
 
   <div className="bg-blue-400 px-8 py-10 rounded-md transition duration-300 ease-in-out hover:bg-blue-500">
     <div className="w-20 py-3 flex justify-center bg-gray-100 rounded-md mb-4">
-    <i class="ri-edit-box-fill text-3xl"></i>
+    <i className="ri-edit-box-fill text-3xl"></i>
     </div>
     <h4 className="font-medium text-gray-700 text-lg mb-4">
       Practical Sandboxes
@@ -30,13 +31,15 @@ export default function About() {
 
   <div className="bg-blue-400 px-8 py-10 rounded-md transition duration-300 ease-in-out hover:bg-blue-500">
     <div className="w-20 py-3 flex justify-center bg-gray-100 rounded-md mb-4">
-    <i class="ri-terminal-box-fill text-3xl"></i>
+    <i className="ri-terminal-box-fill text-3xl"></i>
     </div>
     <h4 className="font-medium text-gray-700 text-lg mb-4">
       Successful Side Projects
     </h4>
     <p className="font-normal text-gray-500 text-md">
-      Beyond my core work, I've embarked on and completed numerous side projects that have flourished into successful endeavors. These ventures showcase my innovative spirit, problem-solving abilities, and determination to deliver outstanding results.
+      <Link to="/about/team">
+      Click me
+      </Link>
     </p>
   </div>
 </div>

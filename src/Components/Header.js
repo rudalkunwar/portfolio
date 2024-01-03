@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
 
@@ -11,24 +12,29 @@ function Header() {
             className="md:flex md:space-x-12"
           >
             <li>
-              <a className="text-gray-200 hover:text-blue-600" href="#">
+              <Link className="text-gray-200 hover:text-blue-600" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="text-gray-200 hover:text-blue-600" href="#">
+              <Link className="text-gray-200 hover:text-blue-600" to="/Service">
                 Service
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="text-gray-200 hover:text-blue-600" href="#">
-                Projects
-              </a>
+              <Link className="text-gray-200 hover:text-blue-600" to="/About">
+                About
+              </Link>
             </li>
             <li>
-              <a className="text-gray-200 hover:text-blue-600" href="#">
+              <Link className="text-gray-200 hover:text-blue-600" to="/Portfolio">
+              Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link className="text-gray-200 hover:text-blue-600" to="/Contact">
                 Hire Me
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
